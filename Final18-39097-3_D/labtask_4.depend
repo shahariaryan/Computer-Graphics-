@@ -335,7 +335,12 @@
 	<GL/glut.h>
 	<math.h>
 
-1626668853 source:z:\study\cg\gitadds\mid_assignment_2_18-39097-3_d\main.cpp
+1627731131 source:z:\study\cg\tasks\mid_assignment_2_18-39097-3_d\main.cpp
+	<windows.h>
+	<GL/glut.h>
+	<math.h>
+
+1627731131 source:z:\study\cg\tasks\final_assignment_1_18-39097-3_d\main.cpp
 	<windows.h>
 	<GL/glut.h>
 	<math.h>
