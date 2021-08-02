@@ -4,7 +4,93 @@
 # define PI           3.14159265358979323846
 
 
-void display()
+GLfloat position = 0.0f;//cloud
+GLfloat speed = 0.002f;
+
+GLfloat position1 = 0.0f;//cloud2
+GLfloat speed1 = 0.002f;
+
+GLfloat position2 = 0.0f;//cloud3
+GLfloat speed2 = 0.002f;
+
+GLfloat position3 = 0.0f;//wave1
+GLfloat speed3 = 0.003f;
+
+GLfloat position4 = 0.0f;//wave2
+GLfloat speed4 = 0.003f;
+
+void updateCloud(int value) {
+
+    if(position >1.0)
+        position =-1.0f;
+
+    position += speed; //position=position-speed;1-.1=.9
+
+	glutPostRedisplay();
+
+
+	glutTimerFunc(100, updateCloud, 0);
+}
+
+void updateCloud2(int value) {
+
+    if(position1 >1.0)
+        position1 =-1.0f;
+
+    position1 += speed1; //position=position-speed;1-.1=.9
+
+	glutPostRedisplay();
+
+
+	glutTimerFunc(100, updateCloud2, 0);
+
+}
+
+void updateCloud3(int value) {
+
+    if(position2 >1.0)
+        position2 =-1.0f;
+
+    position2 += speed2; //position=position-speed;1-.1=.9
+
+	glutPostRedisplay();
+
+
+	glutTimerFunc(100, updateCloud3, 0);
+
+}
+
+void updateWave1(int value) {
+
+    if(position3 <-1.0)
+        position3 =1.0f;
+
+    position3 -= speed3; //position=position-speed;1-.1=.9
+
+	glutPostRedisplay();
+
+
+	glutTimerFunc(100, updateWave1, 0);
+
+}
+
+void updateWave2(int value) {
+
+    if(position4 <-1.0)
+        position4 =1.0f;
+
+    position4 -= speed4; //position=position-speed;1-.1=.9
+
+	glutPostRedisplay();
+
+
+	glutTimerFunc(100, updateWave2, 0);
+
+}
+
+
+
+void day()
 {    glClearColor(1.0f, 1.0f, 1.0f, 1.0f); //white_background
     glClear(GL_COLOR_BUFFER_BIT);
 
@@ -19,6 +105,24 @@ glEnd();
 
 //sun
 int i;
+
+ GLfloat x110=-0.01f; GLfloat y110= 0.81f; GLfloat radius110 =0.10f;
+	int triangleAmount110 = 20; //# of triangles used to draw circle
+
+	//GLfloat radius = 0.8f; //radius
+	GLfloat twicePi110 = 2.0f * PI;
+
+	glBegin(GL_TRIANGLE_FAN);
+	glColor3ub(170, 218, 239); // sun
+		glVertex2f(x110, y110); // center of circle
+		for(i = 0; i <= triangleAmount110;i++) {
+			glVertex2f(
+		            x110 + (radius110* cos(i *  twicePi110 / triangleAmount110)),
+			    y110 + (radius110 * sin(i * twicePi110 / triangleAmount110))
+			);
+		}
+	glEnd();
+
     GLfloat x111=-0.01f; GLfloat y111= 0.81f; GLfloat radius111 =0.09f;
 	int triangleAmount111 = 20; //# of triangles used to draw circle
 
@@ -26,7 +130,7 @@ int i;
 	GLfloat twicePi111 = 2.0f * PI;
 
 	glBegin(GL_TRIANGLE_FAN);
-	glColor3ub(183, 215, 229); // sun
+	glColor3ub(169, 211, 229); // sun
 		glVertex2f(x111, y111); // center of circle
 		for(i = 0; i <= triangleAmount111;i++) {
 			glVertex2f(
@@ -56,6 +160,9 @@ int i;
 
 
 //cloud start
+glPushMatrix();
+glTranslatef(position,0,0); //cloud animation
+
 GLfloat x1721=-.9f; GLfloat y1721=.72f; GLfloat radius1721 =0.030f;
 	int triangleAmount1721 = 20; //# of triangles used to draw circle
 
@@ -440,6 +547,11 @@ GLfloat x19911111123=-.84f; GLfloat y19911111123=.76f; GLfloat radius19911111123
 		}
 	glEnd();
 	glLoadIdentity();
+	glPopMatrix();
+
+
+glPushMatrix();
+glTranslatef(position1,0,0); //cloud 2 animation
 
 	GLfloat x92=0.36f; GLfloat y92=0.69f; GLfloat radius92 =0.035f;
 	int triangleAmount92 = 20; //# of triangles used to draw circle
@@ -725,6 +837,9 @@ GLfloat x19911111123=-.84f; GLfloat y19911111123=.76f; GLfloat radius19911111123
     glLoadIdentity();
 
 
+    glPushMatrix();
+    glTranslatef(position,0,0);//cloud 3 animation
+
     glTranslatef(0.3,0.15,0);
     GLfloat x9213=0.36f; GLfloat y9213=0.69f; GLfloat radius9213 =0.035f;
 	int triangleAmount9213 = 20; //# of triangles used to draw circle
@@ -866,6 +981,7 @@ GLfloat x19911111123=-.84f; GLfloat y19911111123=.76f; GLfloat radius19911111123
 		}
 	glEnd();
 	glLoadIdentity();
+    glPopMatrix();
 //cloud end
 
 
@@ -1551,6 +1667,9 @@ glVertex2f(-1, -0.15 );
 glVertex2f(-1, -0.05);
 glEnd();
 
+
+glPushMatrix();
+glTranslatef(position3,0,0);
 glBegin(GL_TRIANGLES); //back sea 1 waves left to right 1
 glColor3ub(46, 144, 217);
 glVertex2f(1, -0.05);
@@ -1585,6 +1704,8 @@ glVertex2f(-1, -0.04);
 glVertex2f(-0.85, -0.05);
 glVertex2f(-1, -0.05 );
 glEnd();
+glPopMatrix();
+
 
 glBegin(GL_QUADS); //back sea 2
 glColor3ub(28, 131, 180);
@@ -1594,6 +1715,8 @@ glVertex2f(-1, -0.22 );
 glVertex2f(-1, -0.15);
 glEnd();
 
+glPushMatrix();
+glTranslatef(position4,0,0);
 glBegin(GL_TRIANGLES); //back sea 2 waves left to right 1
 glColor3ub(28, 131, 180);
 glVertex2f(1, -0.15);
@@ -1621,6 +1744,30 @@ glVertex2f(-0.38, -0.14);
 glVertex2f(-0.38, -0.15);
 glVertex2f(-0.3, -0.15 );
 glEnd();
+
+glBegin(GL_TRIANGLES); //back sea 2 waves left to right 5
+glColor3ub(28, 131, 180);
+glVertex2f(-0.38, -0.15);
+glVertex2f(-0.38, -0.14);
+glVertex2f(-0.58, -0.15);
+glEnd();
+
+glBegin(GL_TRIANGLES); //back sea 2 waves left to right 6
+glColor3ub(28, 131, 180);
+glVertex2f(-0.58, -0.15);
+glVertex2f(-0.72, -0.14);
+glVertex2f(-0.88, -0.15);
+glEnd();
+
+glBegin(GL_TRIANGLES); //back sea 2 waves left to right 6
+glColor3ub(28, 131, 180);
+glVertex2f(-1, -0.15);
+glVertex2f(-0.94, -0.14);
+glVertex2f(-0.88, -0.15);
+glEnd();
+
+glPopMatrix();
+
 
 glBegin(GL_QUADS); //Middle port
 glColor3ub(164, 160, 159);
@@ -6633,12 +6780,16 @@ glFlush();
 
 }
 
-
 int main(int argc, char** argv)
 {
     glutInit(&argc, argv);          // Initialize GLUT
     glutInitWindowSize(320, 320);
     glutCreateWindow("Model Transform");
-    glutDisplayFunc(display);
+    glutDisplayFunc(day);
+    glutTimerFunc(100, updateCloud, 0);
+    glutTimerFunc(100, updateCloud2, 0);
+    glutTimerFunc(100, updateCloud3, 0);
+    glutTimerFunc(100, updateWave1, 0);
+    glutTimerFunc(100, updateWave2, 0);
     glutMainLoop();
     return 0;}
