@@ -3,7 +3,7 @@
 #include<math.h>>
 # define PI           3.14159265358979323846
 
-void disback();
+
 
 
 GLfloat position = 0.0f;//cloud
@@ -6844,26 +6844,6 @@ glVertex2f(0.86, -0.38);
 glVertex2f(0.695, -0.38);
 glEnd();
 
-glBegin(GL_QUADS);//3
-glColor3ub(97, 126, 166);
-glVertex2f(0.86, -0.38);
-glVertex2f(0.86, -0.47);
-glVertex2f(1, -0.47);
-glVertex2f(1, -0.38);
-glEnd();
-
-glBegin(GL_LINES);//down raw left
-glColor3ub(64, 64, 64);
-glVertex2f(0.86, -0.38);
-glVertex2f(0.86, -0.47);
-glVertex2f(0.86, -0.47);
-glVertex2f(1, -0.47);
-glVertex2f(1, -0.47);
-glVertex2f(1, -0.38);
-glVertex2f(1, -0.38);
-glVertex2f(0.86, -0.38);
-glEnd();
-
 
 glBegin(GL_QUADS);//4
 glColor3ub(22, 28, 157);
@@ -7063,28 +7043,28 @@ glPushMatrix();
 glTranslatef(position7,0,0);// animate truck
 
 glBegin(GL_QUADS);//front cargo car
-glColor3ub(231, 139, 54);
+glColor3ub(113, 127, 153);
 glVertex2f(-0.306, -0.63);
 glVertex2f(-0.306, -0.67);
 glVertex2f(-0.256, -0.67);
 glVertex2f(-0.262, -0.63);
 glEnd();
 glBegin(GL_QUADS);//front cargo car
-glColor3ub(231, 139, 54);
+glColor3ub(113, 127, 153);
 glVertex2f(-0.306, -0.67);
 glVertex2f(-0.306, -0.74);
 glVertex2f(-0.256, -0.74);
 glVertex2f(-0.256, -0.67);
 glEnd();
 glBegin(GL_QUADS);//front cargo car
-glColor3ub(231, 139, 54);
+glColor3ub(113, 127, 153);
 glVertex2f(-0.256, -0.67);
 glVertex2f(-0.256, -0.74);
 glVertex2f(-0.223, -0.74);
 glVertex2f(-0.223, -0.682);
 glEnd();
 glBegin(GL_QUADS);//front cargo car
-glColor3ub(231, 139, 54);
+glColor3ub(113, 127, 153);
 glVertex2f(-0.223, -0.682);
 glVertex2f(-0.223, -0.722);
 glVertex2f(-0.212, -0.722);
@@ -7092,7 +7072,7 @@ glVertex2f(-0.212, -0.686);
 glEnd();
 
 glBegin(GL_QUADS);//front cargo car light
-glColor3ub(240, 241, 243);
+glColor3ub(113, 127, 153);
 glVertex2f(-0.216, -0.692);
 glVertex2f(-0.216, -0.704);
 glVertex2f(-0.212, -0.704);
@@ -7201,7 +7181,7 @@ glVertex2f(-0.59, -0.762);
 glVertex2f(-0.59, -0.744);
 glEnd();
 glBegin(GL_QUADS);//cargo box
-glColor3ub(36, 45, 198);
+glColor3ub(153, 119, 78);
 glVertex2f(-0.572, -0.62);
 glVertex2f(-0.572, -0.728);
 glVertex2f(-0.386, -0.728);
@@ -46744,7 +46724,7 @@ glEnd();
 
 
 glBegin(GL_QUADS); //top windows 1
-glColor3ub(114, 136, 173);
+glColor3ub(204, 204, 0);
 glVertex2f(-0.691, 0.004);
 glVertex2f(-0.71, 0.004 );
 glVertex2f(-0.71, -0.014 );
@@ -46752,7 +46732,7 @@ glVertex2f(-0.698, -0.014);
 glEnd();
 
 glBegin(GL_QUADS); //top windows 2
-glColor3ub(114, 136, 173);
+glColor3ub(204, 204, 0);
 glVertex2f(-0.715, 0.004);
 glVertex2f(-0.73, 0.004 );
 glVertex2f(-0.73, -0.014 );
@@ -46760,7 +46740,7 @@ glVertex2f(-0.715, -0.014);
 glEnd();
 
 glBegin(GL_QUADS); //top windows 3
-glColor3ub(114, 136, 173);
+glColor3ub(204, 204, 0);
 glVertex2f(-0.735, 0.004);
 glVertex2f(-0.75, 0.004 );
 glVertex2f(-0.75, -0.014 );
@@ -46768,7 +46748,7 @@ glVertex2f(-0.735, -0.014);
 glEnd();
 
 glBegin(GL_QUADS); //top windows 4
-glColor3ub(114, 136, 173);
+glColor3ub(204, 204, 0);
 glVertex2f(-0.755, 0.004);
 glVertex2f(-0.77, 0.004 );
 glVertex2f(-0.77, -0.014 );
@@ -46776,7 +46756,7 @@ glVertex2f(-0.755, -0.014);
 glEnd();
 
 glBegin(GL_QUADS); //top windows 5
-glColor3ub(114, 136, 173);
+glColor3ub(204, 204, 0);
 glVertex2f(-0.774, 0.004);
 glVertex2f(-0.788, 0.004 );
 glVertex2f(-0.788, -0.014 );
@@ -46784,7 +46764,7 @@ glVertex2f(-0.774, -0.014);
 glEnd();
 
 glBegin(GL_QUADS); //middle windows 1
-glColor3ub(114, 136, 173);
+glColor3ub(204, 204, 0);
 glVertex2f(-0.7, -0.03);
 glVertex2f(-0.71, -0.03 );
 glVertex2f(-0.71, -0.045 );
@@ -46792,7 +46772,7 @@ glVertex2f(-0.7, -0.045);
 glEnd();
 
 glBegin(GL_QUADS); //middle windows 2
-glColor3ub(114, 136, 173);
+glColor3ub(204, 204, 0);
 glVertex2f(-0.715, -0.03);
 glVertex2f(-0.725, -0.03 );
 glVertex2f(-0.725, -0.045 );
@@ -46800,7 +46780,7 @@ glVertex2f(-0.715, -0.045);
 glEnd();
 
 glBegin(GL_QUADS); //middle windows 3
-glColor3ub(114, 136, 173);
+glColor3ub(204, 204, 0);
 glVertex2f(-0.735, -0.03);
 glVertex2f(-0.75, -0.03 );
 glVertex2f(-0.75, -0.045 );
@@ -46808,7 +46788,7 @@ glVertex2f(-0.735, -0.045);
 glEnd();
 
 glBegin(GL_QUADS); //middle windows 4
-glColor3ub(114, 136, 173);
+glColor3ub(204, 204, 0);
 glVertex2f(-0.76, -0.03);
 glVertex2f(-0.77, -0.03 );
 glVertex2f(-0.77, -0.045 );
@@ -46816,7 +46796,7 @@ glVertex2f(-0.76, -0.045);
 glEnd();
 
 glBegin(GL_QUADS); //middle windows 5
-glColor3ub(114, 136, 173);
+glColor3ub(204, 204, 0);
 glVertex2f(-0.775, -0.03);
 glVertex2f(-0.785, -0.03 );
 glVertex2f(-0.785, -0.045 );
@@ -46824,7 +46804,7 @@ glVertex2f(-0.775, -0.045);
 glEnd();
 
 glBegin(GL_QUADS); //middle windows 6
-glColor3ub(114, 136, 173);
+glColor3ub(204, 204, 0);
 glVertex2f(-0.7, -0.055);
 glVertex2f(-0.71,-0.055 );
 glVertex2f(-0.71, -0.07 );
@@ -46832,7 +46812,7 @@ glVertex2f(-0.7, -0.07);
 glEnd();
 
 glBegin(GL_QUADS); //middle windows 7
-glColor3ub(114, 136, 173);
+glColor3ub(204, 204, 0);
 glVertex2f(-0.715, -0.055);
 glVertex2f(-0.725, -0.055 );
 glVertex2f(-0.725, -0.07 );
@@ -46840,7 +46820,7 @@ glVertex2f(-0.715, -0.07);
 glEnd();
 
 glBegin(GL_QUADS); //middle windows 8
-glColor3ub(114, 136, 173);
+glColor3ub(204, 204, 0);
 glVertex2f(-0.735, -0.055);
 glVertex2f(-0.75,-0.055 );
 glVertex2f(-0.75, -0.07 );
@@ -46848,7 +46828,7 @@ glVertex2f(-0.735, -0.07);
 glEnd();
 
 glBegin(GL_QUADS); //middle windows 9
-glColor3ub(114, 136, 173);
+glColor3ub(204, 204, 0);
 glVertex2f(-0.76, -0.055);
 glVertex2f(-0.77, -0.055 );
 glVertex2f(-0.77,-0.07 );
@@ -46856,7 +46836,7 @@ glVertex2f(-0.76, -0.07);
 glEnd();
 
 glBegin(GL_QUADS); //middle windows 10
-glColor3ub(114, 136, 173);
+glColor3ub(204, 204, 0);
 glVertex2f(-0.775, -0.055);
 glVertex2f(-0.785,-0.055 );
 glVertex2f(-0.785, -0.07 );
@@ -46871,7 +46851,7 @@ glEnd();
 	GLfloat twicePi1 = 2.0f * PI;
 
 	glBegin(GL_TRIANGLE_FAN);
-	glColor3ub(114, 136, 173); // lower windows 1
+	glColor3ub(204, 204, 0); // lower windows 1
 		glVertex2f(x1, y1); // center of circle
 		for(i = 0; i <= triangleAmount1;i++) {
 			glVertex2f(
@@ -46888,7 +46868,7 @@ glEnd();
 	GLfloat twicePi2 = 2.0f * PI;
 
 	glBegin(GL_TRIANGLE_FAN);
-	glColor3ub(114, 136, 173); // lower windows 1
+	glColor3ub(204, 204, 0); // lower windows 1
 		glVertex2f(x2, y2); // center of circle
 		for(i = 0; i <= triangleAmount2;i++) {
 			glVertex2f(
@@ -46906,7 +46886,7 @@ glEnd();
 	GLfloat twicePi3 = 2.0f * PI;
 
 	glBegin(GL_TRIANGLE_FAN);
-	glColor3ub(114, 136, 173); // lower windows 1
+	glColor3ub(204, 204, 0); // lower windows 1
 		glVertex2f(x3, y3); // center of circle
 		for(i = 0; i <= triangleAmount3;i++) {
 			glVertex2f(
@@ -47458,7 +47438,7 @@ glVertex2f(0.98, -0.24);
 glEnd();
 
 glBegin(GL_QUADS); //GLASS
-glColor3ub(2, 71, 76);
+glColor3ub(230, 230, 0);
 glVertex2f(0.91, -0.225);
 glVertex2f(0.907, -0.245);
 glVertex2f(0.968, -0.245);
@@ -47638,7 +47618,7 @@ glVertex2f(0.98, -0.24);
 glEnd();
 
 glBegin(GL_QUADS); //GLASS
-glColor3ub(2, 71, 76);
+glColor3ub(230, 230, 0);
 glVertex2f(0.91, -0.225);
 glVertex2f(0.907, -0.245);
 glVertex2f(0.968, -0.245);
@@ -49407,7 +49387,7 @@ glEnd();
 
 
 glBegin(GL_QUADS);//cabin glass left
-glColor3ub(77, 175, 231);
+glColor3ub(255, 255, 0);
 glVertex2f(-0.46, -0.246);
 glVertex2f(-0.46, -0.27);
 glVertex2f(-0.386, -0.27);
@@ -49415,7 +49395,7 @@ glVertex2f(-0.386, -0.246);
 glEnd();
 
 glBegin(GL_QUADS);//cabin glass middle
-glColor3ub(73, 158, 202);
+glColor3ub(230, 230, 0);
 glVertex2f(-0.5, -0.246);
 glVertex2f(-0.5, -0.27);
 glVertex2f(-0.46, -0.27);
@@ -49423,7 +49403,7 @@ glVertex2f(-0.46, -0.246);
 glEnd();
 
 glBegin(GL_QUADS);//cabin glass right
-glColor3ub(37, 145, 198);
+glColor3ub(204, 204, 0);
 glVertex2f(-0.572, -0.246);
 glVertex2f(-0.572, -0.27);
 glVertex2f(-0.5, -0.27);
@@ -49626,14 +49606,14 @@ glEnd();
 
 
 glBegin(GL_QUADS);//cabin middle glass left
-glColor3ub(77, 175, 231);
+glColor3ub(255, 255, 0);
 glVertex2f(-0.46, -0.1);
 glVertex2f(-0.44, -0.1);
 glVertex2f(-0.45, -0.16);
 glVertex2f(-0.46, -0.16);
 glEnd();
 glBegin(GL_QUADS);//cabin middle glass left
-glColor3ub(77, 175, 231);
+glColor3ub(255, 255, 0);
 glVertex2f(-0.435, -0.1);
 glVertex2f(-0.395, -0.1);
 glVertex2f(-0.408, -0.16);
@@ -49641,7 +49621,7 @@ glVertex2f(-0.445, -0.16);
 glEnd();
 
 glBegin(GL_QUADS);//cabin middle glass middle
-glColor3ub(73, 158, 202);
+glColor3ub(230, 230, 0);
 glVertex2f(-0.5, -0.1);
 glVertex2f(-0.46, -0.1);
 glVertex2f(-0.46, -0.16);
@@ -49649,14 +49629,14 @@ glVertex2f(-0.5, -0.16);
 glEnd();
 
 glBegin(GL_QUADS);//cabin middle glass right
-glColor3ub(37, 145, 198);
+glColor3ub(204, 204, 0);
 glVertex2f(-0.56, -0.1);
 glVertex2f(-0.52, -0.1);
 glVertex2f(-0.51, -0.16);
 glVertex2f(-0.55, -0.16);
 glEnd();
 glBegin(GL_QUADS);//cabin middle glass right
-glColor3ub(37, 145, 198);
+glColor3ub(204, 204, 0);
 glVertex2f(-0.515, -0.1);
 glVertex2f(-0.5, -0.1);
 glVertex2f(-0.5, -0.16);
@@ -49855,7 +49835,7 @@ glEnd();
 	GLfloat twicePi4 = 2.0f * PI;
 
 	glBegin(GL_TRIANGLE_FAN);
-	glColor3ub(37, 145, 198); //left window
+	glColor3ub(204, 204, 0); //left window
 		glVertex2f(x4, y4); // center of circle
 		for(i = 0; i <= triangleAmount4;i++) {
 			glVertex2f(
@@ -49873,7 +49853,7 @@ glEnd();
 	GLfloat twicePi5 = 2.0f * PI;
 
 	glBegin(GL_TRIANGLE_FAN);
-	glColor3ub(37, 145, 198); // left window
+	glColor3ub(204, 204, 0); // left window
 		glVertex2f(x5, y5); // center of circle
 		for(i = 0; i <= triangleAmount5;i++) {
 			glVertex2f(
@@ -49891,7 +49871,7 @@ glEnd();
 	GLfloat twicePi6 = 2.0f * PI;
 
 	glBegin(GL_TRIANGLE_FAN);
-	glColor3ub(73, 158, 202); // middle window
+	glColor3ub(230, 230, 0); // middle window
 		glVertex2f(x6, y6); // center of circle
 		for(i = 0; i <= triangleAmount6;i++) {
 			glVertex2f(
@@ -49909,7 +49889,7 @@ glEnd();
 	GLfloat twicePi7 = 2.0f * PI;
 
 	glBegin(GL_TRIANGLE_FAN);
-	glColor3ub(73, 158, 202); // middle window
+	glColor3ub(230, 230, 0); // middle window
 		glVertex2f(x7, y7); // center of circle
 		for(i = 0; i <= triangleAmount7;i++) {
 			glVertex2f(
@@ -49927,7 +49907,7 @@ glEnd();
 	GLfloat twicePi8 = 2.0f * PI;
 
 	glBegin(GL_TRIANGLE_FAN);
-	glColor3ub(73, 158, 202); // middle window
+	glColor3ub(230, 230, 0); // middle window
 		glVertex2f(x8, y8); // center of circle
 		for(i = 0; i <= triangleAmount8;i++) {
 			glVertex2f(
@@ -49945,7 +49925,7 @@ GLfloat x9=-0.44f; GLfloat y9=-0.35f; GLfloat radius9 =0.012f;
 	GLfloat twicePi9 = 2.0f * PI;
 
 	glBegin(GL_TRIANGLE_FAN);
-	glColor3ub(77, 175, 231); // windmill
+	glColor3ub(255, 255, 0); // windmill
 		glVertex2f(x9, y9); // center of circle
 		for(i = 0; i <= triangleAmount9;i++) {
 			glVertex2f(
@@ -49963,7 +49943,7 @@ GLfloat x9=-0.44f; GLfloat y9=-0.35f; GLfloat radius9 =0.012f;
 	GLfloat twicePi10 = 2.0f * PI;
 
 	glBegin(GL_TRIANGLE_FAN);
-	glColor3ub(77, 175, 231); // windmill
+	glColor3ub(255, 255, 0); // windmill
 		glVertex2f(x10, y10); // center of circle
 		for(i = 0; i <= triangleAmount10;i++) {
 			glVertex2f(
@@ -49981,7 +49961,7 @@ GLfloat x9=-0.44f; GLfloat y9=-0.35f; GLfloat radius9 =0.012f;
 	GLfloat twicePi11 = 2.0f * PI;
 
 	glBegin(GL_TRIANGLE_FAN);
-	glColor3ub(77, 175, 231); // windmill
+	glColor3ub(255, 255, 0); // windmill
 		glVertex2f(x11, y11); // center of circle
 		for(i = 0; i <= triangleAmount11;i++) {
 			glVertex2f(
@@ -49999,7 +49979,7 @@ GLfloat x9=-0.44f; GLfloat y9=-0.35f; GLfloat radius9 =0.012f;
 	GLfloat twicePi12 = 2.0f * PI;
 
 	glBegin(GL_TRIANGLE_FAN);
-	glColor3ub(77, 175, 231); // windmill
+	glColor3ub(255, 255, 0); // windmill
 		glVertex2f(x12, y12); // center of circle
 		for(i = 0; i <= triangleAmount12;i++) {
 			glVertex2f(
@@ -50017,7 +49997,7 @@ GLfloat x9=-0.44f; GLfloat y9=-0.35f; GLfloat radius9 =0.012f;
 	GLfloat twicePi13 = 2.0f * PI;
 
 	glBegin(GL_TRIANGLE_FAN);
-	glColor3ub(77, 175, 231); // windmill
+	glColor3ub(255, 255, 0); // windmill
 		glVertex2f(x13, y13); // center of circle
 		for(i = 0; i <= triangleAmount13;i++) {
 			glVertex2f(
@@ -50034,7 +50014,7 @@ GLfloat x9=-0.44f; GLfloat y9=-0.35f; GLfloat radius9 =0.012f;
 	GLfloat twicePi14 = 2.0f * PI;
 
 	glBegin(GL_TRIANGLE_FAN);
-	glColor3ub(77, 175, 231); // windmill
+	glColor3ub(255, 255, 0); // windmill
 		glVertex2f(x14, y14); // center of circle
 		for(i = 0; i <= triangleAmount14;i++) {
 			glVertex2f(
@@ -51174,28 +51154,28 @@ glEnd();
 //cargo truck start
 
 glBegin(GL_QUADS);//front cargo car
-glColor3ub(231, 139, 54);
+glColor3ub(189, 67, 64);
 glVertex2f(-0.306, -0.63);
 glVertex2f(-0.306, -0.67);
 glVertex2f(-0.256, -0.67);
 glVertex2f(-0.262, -0.63);
 glEnd();
 glBegin(GL_QUADS);//front cargo car
-glColor3ub(231, 139, 54);
+glColor3ub(189, 67, 64);
 glVertex2f(-0.306, -0.67);
 glVertex2f(-0.306, -0.74);
 glVertex2f(-0.256, -0.74);
 glVertex2f(-0.256, -0.67);
 glEnd();
 glBegin(GL_QUADS);//front cargo car
-glColor3ub(231, 139, 54);
+glColor3ub(189, 67, 64);
 glVertex2f(-0.256, -0.67);
 glVertex2f(-0.256, -0.74);
 glVertex2f(-0.223, -0.74);
 glVertex2f(-0.223, -0.682);
 glEnd();
 glBegin(GL_QUADS);//front cargo car
-glColor3ub(231, 139, 54);
+glColor3ub(189, 67, 64);
 glVertex2f(-0.223, -0.682);
 glVertex2f(-0.223, -0.722);
 glVertex2f(-0.212, -0.722);
@@ -51203,14 +51183,14 @@ glVertex2f(-0.212, -0.686);
 glEnd();
 
 glBegin(GL_QUADS);//front cargo car light
-glColor3ub(240, 241, 243);
+glColor3ub(189, 67, 64);
 glVertex2f(-0.216, -0.692);
 glVertex2f(-0.216, -0.704);
 glVertex2f(-0.212, -0.704);
 glVertex2f(-0.212, -0.692);
 glEnd();
 glBegin(GL_QUADS);//front cargo car glass
-glColor3ub(169, 209, 242);
+glColor3ub(255, 255, 0);
 glVertex2f(-0.292, -0.635);
 glVertex2f(-0.292, -0.67);
 glVertex2f(-0.261, -0.67);
@@ -53622,7 +53602,7 @@ glEnd();
 
 
 glBegin(GL_QUADS); //top windows 1
-glColor3ub(114, 136, 173);
+glColor3ub(230, 184, 0);
 glVertex2f(-0.691, 0.004);
 glVertex2f(-0.71, 0.004 );
 glVertex2f(-0.71, -0.014 );
@@ -53630,7 +53610,7 @@ glVertex2f(-0.698, -0.014);
 glEnd();
 
 glBegin(GL_QUADS); //top windows 2
-glColor3ub(114, 136, 173);
+glColor3ub(230, 184, 0);
 glVertex2f(-0.715, 0.004);
 glVertex2f(-0.73, 0.004 );
 glVertex2f(-0.73, -0.014 );
@@ -53638,7 +53618,7 @@ glVertex2f(-0.715, -0.014);
 glEnd();
 
 glBegin(GL_QUADS); //top windows 3
-glColor3ub(114, 136, 173);
+glColor3ub(230, 184, 0);
 glVertex2f(-0.735, 0.004);
 glVertex2f(-0.75, 0.004 );
 glVertex2f(-0.75, -0.014 );
@@ -53646,7 +53626,7 @@ glVertex2f(-0.735, -0.014);
 glEnd();
 
 glBegin(GL_QUADS); //top windows 4
-glColor3ub(114, 136, 173);
+glColor3ub(230, 184, 0);
 glVertex2f(-0.755, 0.004);
 glVertex2f(-0.77, 0.004 );
 glVertex2f(-0.77, -0.014 );
@@ -53654,7 +53634,7 @@ glVertex2f(-0.755, -0.014);
 glEnd();
 
 glBegin(GL_QUADS); //top windows 5
-glColor3ub(114, 136, 173);
+glColor3ub(230, 184, 0);
 glVertex2f(-0.774, 0.004);
 glVertex2f(-0.788, 0.004 );
 glVertex2f(-0.788, -0.014 );
@@ -53662,7 +53642,7 @@ glVertex2f(-0.774, -0.014);
 glEnd();
 
 glBegin(GL_QUADS); //middle windows 1
-glColor3ub(114, 136, 173);
+glColor3ub(230, 184, 0);
 glVertex2f(-0.7, -0.03);
 glVertex2f(-0.71, -0.03 );
 glVertex2f(-0.71, -0.045 );
@@ -53670,7 +53650,7 @@ glVertex2f(-0.7, -0.045);
 glEnd();
 
 glBegin(GL_QUADS); //middle windows 2
-glColor3ub(114, 136, 173);
+glColor3ub(230, 184, 0);
 glVertex2f(-0.715, -0.03);
 glVertex2f(-0.725, -0.03 );
 glVertex2f(-0.725, -0.045 );
@@ -53678,7 +53658,7 @@ glVertex2f(-0.715, -0.045);
 glEnd();
 
 glBegin(GL_QUADS); //middle windows 3
-glColor3ub(114, 136, 173);
+glColor3ub(230, 184, 0);
 glVertex2f(-0.735, -0.03);
 glVertex2f(-0.75, -0.03 );
 glVertex2f(-0.75, -0.045 );
@@ -53686,7 +53666,7 @@ glVertex2f(-0.735, -0.045);
 glEnd();
 
 glBegin(GL_QUADS); //middle windows 4
-glColor3ub(114, 136, 173);
+glColor3ub(230, 184, 0);
 glVertex2f(-0.76, -0.03);
 glVertex2f(-0.77, -0.03 );
 glVertex2f(-0.77, -0.045 );
@@ -53694,7 +53674,7 @@ glVertex2f(-0.76, -0.045);
 glEnd();
 
 glBegin(GL_QUADS); //middle windows 5
-glColor3ub(114, 136, 173);
+glColor3ub(230, 184, 0);
 glVertex2f(-0.775, -0.03);
 glVertex2f(-0.785, -0.03 );
 glVertex2f(-0.785, -0.045 );
@@ -53702,7 +53682,7 @@ glVertex2f(-0.775, -0.045);
 glEnd();
 
 glBegin(GL_QUADS); //middle windows 6
-glColor3ub(114, 136, 173);
+glColor3ub(230, 184, 0);
 glVertex2f(-0.7, -0.055);
 glVertex2f(-0.71,-0.055 );
 glVertex2f(-0.71, -0.07 );
@@ -53710,7 +53690,7 @@ glVertex2f(-0.7, -0.07);
 glEnd();
 
 glBegin(GL_QUADS); //middle windows 7
-glColor3ub(114, 136, 173);
+glColor3ub(230, 184, 0);
 glVertex2f(-0.715, -0.055);
 glVertex2f(-0.725, -0.055 );
 glVertex2f(-0.725, -0.07 );
@@ -53718,7 +53698,7 @@ glVertex2f(-0.715, -0.07);
 glEnd();
 
 glBegin(GL_QUADS); //middle windows 8
-glColor3ub(114, 136, 173);
+glColor3ub(230, 184, 0);
 glVertex2f(-0.735, -0.055);
 glVertex2f(-0.75,-0.055 );
 glVertex2f(-0.75, -0.07 );
@@ -53726,7 +53706,7 @@ glVertex2f(-0.735, -0.07);
 glEnd();
 
 glBegin(GL_QUADS); //middle windows 9
-glColor3ub(114, 136, 173);
+glColor3ub(230, 184, 0);
 glVertex2f(-0.76, -0.055);
 glVertex2f(-0.77, -0.055 );
 glVertex2f(-0.77,-0.07 );
@@ -53734,7 +53714,7 @@ glVertex2f(-0.76, -0.07);
 glEnd();
 
 glBegin(GL_QUADS); //middle windows 10
-glColor3ub(114, 136, 173);
+glColor3ub(230, 184, 0);
 glVertex2f(-0.775, -0.055);
 glVertex2f(-0.785,-0.055 );
 glVertex2f(-0.785, -0.07 );
@@ -54549,7 +54529,7 @@ glEnd();
 
 
 glBegin(GL_QUADS); //window truck middle
-glColor3ub(167, 219, 244);
+glColor3ub(230, 184, 0);
 glVertex2f(0.444, -0.266);
 glVertex2f(0.444, -0.278);
 glVertex2f(0.47, -0.278);
@@ -56392,7 +56372,7 @@ glEnd();
 
 
 glBegin(GL_QUADS);//cabin glass left
-glColor3ub(77, 175, 231);
+glColor3ub(255, 204, 0);
 glVertex2f(-0.46, -0.246);
 glVertex2f(-0.46, -0.27);
 glVertex2f(-0.386, -0.27);
@@ -56400,7 +56380,7 @@ glVertex2f(-0.386, -0.246);
 glEnd();
 
 glBegin(GL_QUADS);//cabin glass middle
-glColor3ub(73, 158, 202);
+glColor3ub(230, 184, 0);
 glVertex2f(-0.5, -0.246);
 glVertex2f(-0.5, -0.27);
 glVertex2f(-0.46, -0.27);
@@ -56408,7 +56388,7 @@ glVertex2f(-0.46, -0.246);
 glEnd();
 
 glBegin(GL_QUADS);//cabin glass right
-glColor3ub(37, 145, 198);
+glColor3ub(204, 163, 0);
 glVertex2f(-0.572, -0.246);
 glVertex2f(-0.572, -0.27);
 glVertex2f(-0.5, -0.27);
@@ -56611,14 +56591,14 @@ glEnd();
 
 
 glBegin(GL_QUADS);//cabin middle glass left
-glColor3ub(77, 175, 231);
+glColor3ub(255, 204, 0);
 glVertex2f(-0.46, -0.1);
 glVertex2f(-0.44, -0.1);
 glVertex2f(-0.45, -0.16);
 glVertex2f(-0.46, -0.16);
 glEnd();
 glBegin(GL_QUADS);//cabin middle glass left
-glColor3ub(77, 175, 231);
+glColor3ub(255, 204, 0);
 glVertex2f(-0.435, -0.1);
 glVertex2f(-0.395, -0.1);
 glVertex2f(-0.408, -0.16);
@@ -56626,7 +56606,7 @@ glVertex2f(-0.445, -0.16);
 glEnd();
 
 glBegin(GL_QUADS);//cabin middle glass middle
-glColor3ub(73, 158, 202);
+glColor3ub(230, 184, 0);
 glVertex2f(-0.5, -0.1);
 glVertex2f(-0.46, -0.1);
 glVertex2f(-0.46, -0.16);
@@ -56634,14 +56614,14 @@ glVertex2f(-0.5, -0.16);
 glEnd();
 
 glBegin(GL_QUADS);//cabin middle glass right
-glColor3ub(37, 145, 198);
+glColor3ub(204, 163, 0);
 glVertex2f(-0.56, -0.1);
 glVertex2f(-0.52, -0.1);
 glVertex2f(-0.51, -0.16);
 glVertex2f(-0.55, -0.16);
 glEnd();
 glBegin(GL_QUADS);//cabin middle glass right
-glColor3ub(37, 145, 198);
+glColor3ub(204, 163, 0);
 glVertex2f(-0.515, -0.1);
 glVertex2f(-0.5, -0.1);
 glVertex2f(-0.5, -0.16);
@@ -56840,7 +56820,7 @@ glEnd();
 	GLfloat twicePi4 = 2.0f * PI;
 
 	glBegin(GL_TRIANGLE_FAN);
-	glColor3ub(37, 145, 198); //left window
+	glColor3ub(204, 163, 0); //left window
 		glVertex2f(x4, y4); // center of circle
 		for(i = 0; i <= triangleAmount4;i++) {
 			glVertex2f(
@@ -56858,7 +56838,7 @@ glEnd();
 	GLfloat twicePi5 = 2.0f * PI;
 
 	glBegin(GL_TRIANGLE_FAN);
-	glColor3ub(37, 145, 198); // left window
+	glColor3ub(204, 163, 0);// left window
 		glVertex2f(x5, y5); // center of circle
 		for(i = 0; i <= triangleAmount5;i++) {
 			glVertex2f(
@@ -56876,7 +56856,7 @@ glEnd();
 	GLfloat twicePi6 = 2.0f * PI;
 
 	glBegin(GL_TRIANGLE_FAN);
-	glColor3ub(73, 158, 202); // middle window
+	glColor3ub(230, 184, 0);  // middle window
 		glVertex2f(x6, y6); // center of circle
 		for(i = 0; i <= triangleAmount6;i++) {
 			glVertex2f(
@@ -56894,7 +56874,7 @@ glEnd();
 	GLfloat twicePi7 = 2.0f * PI;
 
 	glBegin(GL_TRIANGLE_FAN);
-	glColor3ub(73, 158, 202); // middle window
+	glColor3ub(230, 184, 0); // middle window
 		glVertex2f(x7, y7); // center of circle
 		for(i = 0; i <= triangleAmount7;i++) {
 			glVertex2f(
@@ -56912,7 +56892,7 @@ glEnd();
 	GLfloat twicePi8 = 2.0f * PI;
 
 	glBegin(GL_TRIANGLE_FAN);
-	glColor3ub(73, 158, 202); // middle window
+	glColor3ub(230, 184, 0); // middle window
 		glVertex2f(x8, y8); // center of circle
 		for(i = 0; i <= triangleAmount8;i++) {
 			glVertex2f(
@@ -56930,7 +56910,7 @@ GLfloat x9=-0.44f; GLfloat y9=-0.35f; GLfloat radius9 =0.012f;
 	GLfloat twicePi9 = 2.0f * PI;
 
 	glBegin(GL_TRIANGLE_FAN);
-	glColor3ub(77, 175, 231); // windmill
+	glColor3ub(255, 204, 0); // windmill
 		glVertex2f(x9, y9); // center of circle
 		for(i = 0; i <= triangleAmount9;i++) {
 			glVertex2f(
@@ -56948,7 +56928,7 @@ GLfloat x9=-0.44f; GLfloat y9=-0.35f; GLfloat radius9 =0.012f;
 	GLfloat twicePi10 = 2.0f * PI;
 
 	glBegin(GL_TRIANGLE_FAN);
-	glColor3ub(77, 175, 231); // windmill
+	glColor3ub(255, 204, 0); // windmill
 		glVertex2f(x10, y10); // center of circle
 		for(i = 0; i <= triangleAmount10;i++) {
 			glVertex2f(
@@ -56966,7 +56946,7 @@ GLfloat x9=-0.44f; GLfloat y9=-0.35f; GLfloat radius9 =0.012f;
 	GLfloat twicePi11 = 2.0f * PI;
 
 	glBegin(GL_TRIANGLE_FAN);
-	glColor3ub(77, 175, 231); // windmill
+	glColor3ub(255, 204, 0); // windmill
 		glVertex2f(x11, y11); // center of circle
 		for(i = 0; i <= triangleAmount11;i++) {
 			glVertex2f(
@@ -56984,7 +56964,7 @@ GLfloat x9=-0.44f; GLfloat y9=-0.35f; GLfloat radius9 =0.012f;
 	GLfloat twicePi12 = 2.0f * PI;
 
 	glBegin(GL_TRIANGLE_FAN);
-	glColor3ub(77, 175, 231); // windmill
+	glColor3ub(255, 204, 0); // windmill
 		glVertex2f(x12, y12); // center of circle
 		for(i = 0; i <= triangleAmount12;i++) {
 			glVertex2f(
@@ -57002,7 +56982,7 @@ GLfloat x9=-0.44f; GLfloat y9=-0.35f; GLfloat radius9 =0.012f;
 	GLfloat twicePi13 = 2.0f * PI;
 
 	glBegin(GL_TRIANGLE_FAN);
-	glColor3ub(77, 175, 231); // windmill
+	glColor3ub(255, 204, 0); // windmill
 		glVertex2f(x13, y13); // center of circle
 		for(i = 0; i <= triangleAmount13;i++) {
 			glVertex2f(
@@ -57019,7 +56999,7 @@ GLfloat x9=-0.44f; GLfloat y9=-0.35f; GLfloat radius9 =0.012f;
 	GLfloat twicePi14 = 2.0f * PI;
 
 	glBegin(GL_TRIANGLE_FAN);
-	glColor3ub(77, 175, 231); // windmill
+	glColor3ub(255, 204, 0); // windmill
 		glVertex2f(x14, y14); // center of circle
 		for(i = 0; i <= triangleAmount14;i++) {
 			glVertex2f(
@@ -58381,7 +58361,7 @@ glVertex2f(0.212, -0.704);
 glVertex2f(0.212, -0.692);
 glEnd();
 glBegin(GL_QUADS);//front cargo car glass
-glColor3ub(169, 209, 242);
+glColor3ub(230, 184, 0);
 glVertex2f(0.292, -0.635);
 glVertex2f(0.292, -0.67);
 glVertex2f(0.261, -0.67);
@@ -66176,7 +66156,7 @@ void sound4()
 
 void handleKeypress(unsigned char key, int x, int y) {
 
-	switch (key) {
+	switch (key) {https://github.com/shahariaryan/Computer-Graphics-/tree/master/chittagongPort
 
         case 'q':
          glLoadIdentity();
@@ -66214,7 +66194,7 @@ int main(int argc, char** argv)
 {
     glutInit(&argc, argv);          // Initialize GLUT
     glutInitWindowSize(320, 320);
-    glutCreateWindow("Model Transform");
+    glutCreateWindow("Chittagong Port");
     glutDisplayFunc(day);
     glutKeyboardFunc(handleKeypress);
     glutTimerFunc(100, updateCloud, 0);
