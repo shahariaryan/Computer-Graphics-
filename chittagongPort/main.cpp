@@ -16,38 +16,38 @@ GLfloat position4 = 0.0f;//wave2
 GLfloat speed4 = 0.003f;
 
 GLfloat position5 = 0.0f;//ship1
-GLfloat speed5 = 0.004f;
+GLfloat speed5 = 0.003f;
 
 GLfloat position51 = 0.0f;//ship1 NIGHT
-GLfloat speed51 = 0.004f;
+GLfloat speed51 = 0.0015f;
 
 GLfloat position52 = 0.0f;//ship1 front rain
-GLfloat speed52 = 0.0015f;
+GLfloat speed52 = 0.0008f;
 
 GLfloat position6 = 0.0f;//Hanger
-GLfloat speed6 = 0.001f;
+GLfloat speed6 = 0.0005f;
 
 GLfloat position62 = 0.0f;//Hanger evening
-GLfloat speed62 = 0.001f;
+GLfloat speed62 = 0.0005f;
 
 GLfloat position63 = 0.0f;//Hanger back evening
 GLfloat speed63 = 0.0005f;
 
 GLfloat position64 = 0.0f;//Hanger back night
-GLfloat speed64 = 0.0005f;
+GLfloat speed64 = 0.0004f;
 
 GLfloat position7 = 0.0f;//truck
-GLfloat speed7 = 0.008f;
+GLfloat speed7 = 0.0045f;
 
 GLfloat position72 = 0.0f;//truck middle
-GLfloat speed72 = 0.006f;
+GLfloat speed72 = 0.008f;
 
 GLfloat position73 = 0.0f;//truck middle
-GLfloat speed73 = 0.008f;
+GLfloat speed73 = 0.005f;
 
 
 GLfloat position8 = 0.0f;//evening sun
-GLfloat speed8 = 0.0010f;
+GLfloat speed8 = 0.001f;
 
 GLfloat position9 = 0.0f;//rain
 GLfloat speed9 = 0.04f;
@@ -51689,7 +51689,7 @@ glVertex2f(-0.14, -0.92);
 glVertex2f(-0.14, -0.83);
 glEnd();
 
-glutTimerFunc(5000,rain_demo,0);
+glutTimerFunc(20000,rain_demo,0);
 //glutTimerFunc(1500,demo_back,0);
 glFlush();
 
@@ -59099,7 +59099,7 @@ glVertex2f(-0.14, -1);
 glEnd();
 
 
-glutTimerFunc(7000,night_demo,0);
+glutTimerFunc(20000,night_demo,0);
 glFlush();
 
 
@@ -66113,7 +66113,7 @@ glVertex2f(-0.14, -1);
 glEnd();
 
 
-glutTimerFunc(7000,evening_demo,0);
+glutTimerFunc(20000,evening_demo,0);
 glFlush();
 
 
@@ -66194,7 +66194,7 @@ int main(int argc, char** argv)
 {
     glutInit(&argc, argv);          // Initialize GLUT
     glutInitWindowSize(320, 320);
-    glutCreateWindow("Chittagong Port");
+    glutCreateWindow("Chittagong Port Project by Baishakhi,Fozlur,Joseph");
     glutDisplayFunc(day);
     glutKeyboardFunc(handleKeypress);
     glutTimerFunc(100, updateCloud, 0);
